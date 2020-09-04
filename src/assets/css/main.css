@@ -1,0 +1,256 @@
+/* Общие классы*/
+.container {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 280px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex__horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex__vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Общие классы*/
+
+/*HEADER*/
+.header {
+    background-color: #DF4444;
+}
+
+.header__item {
+    display: block;
+    font-size: 14px;
+    color: white;
+    padding: 25px 10px;
+}
+
+.header__contact__email {
+    font-size: 12px;
+    padding-left: 30px;
+    font-weight: 700;
+    background-image: url(../images/mail.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 20px;
+}
+
+.header__contact__phone {
+    margin-left: 20px;
+    font-size: 12px;
+    padding-left: 30px;
+    font-weight: 700;
+    background-image: url(../images/phone.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 20px;
+}
+
+/*HEADER*/
+
+
+/*MAIN*/
+.general__main__but {
+    display: block;
+    width: fit-content;
+    margin: 70px auto !important;
+}
+
+.main__but {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #DF4444;
+    color: #DF4444;
+    border-radius: 11px;
+    padding: 10px 25px;
+}
+
+.main__but__fill {
+    color: white;
+    background-color: #DF4444;
+    margin-right: 50px;
+}
+
+/*MAIN_SECTION_1*/
+.main__start {
+    height: 700px;
+    padding-top: 300px;
+}
+
+.start__heading {
+    font-size: 50px;
+    color: #DF4444;
+    font-weight: 700;
+    margin-bottom: 64px;
+    line-height: 60px;
+}
+
+/*MAIN_SECTION_1*/
+
+/*MAIN_SECTION_2*/
+.main__service {
+    height: 1100px;
+}
+
+.service__red__stripe {
+    background-color: #DF4444;
+    padding: 20px 0;
+}
+
+.service__heading {
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+
+.service__article__fill {
+    background-color: #DF4444;
+    padding: 50px 0;
+}
+
+.service__article {
+    padding: 40px 0;
+    color: #df4444;
+}
+
+.service__article__fill {
+    color: white;
+    background-color: #df4444;
+}
+
+.service__acricle__heading {
+    display: inline-block;
+    border-bottom: 2px solid #DF4444;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.service__acricle__text {
+    padding: 20px 0;
+    width: 500px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.service__article__img {
+    width: 175px;
+    float: right;
+    margin-top: -166px;
+}
+
+/*MAIN_SECTION_2*/
+/*MAIN_SECTION_3*/
+
+.main__portfolio {
+    height: 1000px;
+}
+
+.portfolio__heading {
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: #DF4444;
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.portfolio__article {
+    margin: 20px 5px;
+    width: 400px;
+    height: 300px;
+    background-color: #Df4444;
+    border-radius: 20px;
+}
+
+/*MAIN_SECTION_3*/
+/*MAIN_SECTION_4*/
+.main__info{
+    height: 750px;
+}
+.info__heading {
+    margin-bottom: 50px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: #DF4444;
+}
+.info__text__block{
+    width: 100%;
+}
+.info__text1{
+    background-color: #df4444;
+    border-radius: 15px;
+    color: white;
+    max-width: 300px;
+    padding: 15px 15px;
+    height: 100%;
+}
+.info__text2{
+    background-color: white;
+    border: 2px solid #df4444;
+    border-radius: 15px;
+    color: #df4444;
+    max-width: 500px;
+    padding: 15px 15px;
+    height: 100%;
+
+}
+.info__items__block{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #df4444;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 10px;
+}
+.info__web,.info__design{
+    margin-top: 50px;
+    width: 100%;
+}
+.info__web__heading,.info__design__heading{
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #df4444;
+}
+
+/*MAIN_SECTION_4*/
+/*MAIN*/
+/*FOOTER*/
+.footer{
+    padding: 50px 0;
+    background-color: #df4444;
+    height: 100px;    
+}
+.footer__nav{
+    width: 250px;
+    margin: 40px 0;
+}
+.footer__nav__item{
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+.footer__text{
+    color: white;
+    font-size: 12px;
+}
+/*FOOTER*/
