@@ -17,6 +17,18 @@
     justify-content: space-between;
     align-items: center;
 }
+.not__visible{
+    transform: translate3d(0px, 30px, 0);
+    opacity: 0;
+}
+.visible{
+    transform: translate3d(0px, 0, 0) !important;
+    opacity: 1 !important;
+}
+.animated{
+    transition: 0.5s;
+}
+
 
 /* Общие классы*/
 
@@ -24,14 +36,18 @@
 .header {
     background-color: #DF4444;
 }
-
 .header__item {
     display: block;
     font-size: 14px;
     color: white;
     padding: 25px 10px;
 }
-
+.header__item:hover .header__underline__hover {
+    border-color: white;
+}
+.header__underline__hover{
+    border-bottom: 1px solid transparent;
+}
 .header__contact__email {
     font-size: 12px;
     padding-left: 30px;
@@ -52,7 +68,12 @@
     background-position-y: center;
     background-size: 20px;
 }
-
+.header__scale__hover{
+    font-size: 12px;
+}
+.header__contact__email:hover .header__scale__hover, .header__contact__phone:hover .header__scale__hover{
+    font-size: 13px;
+}
 /*HEADER*/
 
 
@@ -72,7 +93,14 @@
     border-radius: 11px;
     padding: 10px 25px;
 }
-
+.main__but__fill:hover {
+    background-color: #fff;
+    color: #df4444;
+}
+.main__but__hover:hover {
+    background-color: #df4444;
+    color: white;
+}
 .main__but__fill {
     color: white;
     background-color: #DF4444;
@@ -241,13 +269,17 @@
     height: 100px;    
 }
 .footer__nav{
-    width: 250px;
+    width: 300px;
     margin: 40px 0;
 }
 .footer__nav__item{
     font-size: 12px;
     font-weight: 300;
     color: white;
+    border-bottom: 1px solid transparent;
+}
+.footer__nav__item:hover{
+    border-color: white;
 }
 .footer__text{
     color: white;
