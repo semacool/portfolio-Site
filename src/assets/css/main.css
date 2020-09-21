@@ -4,8 +4,14 @@
     min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
+.flex__static__horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .flex__horizontal {
     display: flex;
     justify-content: space-between;
@@ -74,6 +80,10 @@
 .header__contact__email:hover .header__scale__hover, .header__contact__phone:hover .header__scale__hover{
     font-size: 13px;
 }
+.header__adapt__but{
+    color: aqua;
+    display:  none;
+}
 /*HEADER*/
 
 
@@ -92,6 +102,7 @@
     color: #DF4444;
     border-radius: 11px;
     padding: 10px 25px;
+    margin: 10px;
 }
 .main__but__fill:hover {
     background-color: #fff;
@@ -104,13 +115,12 @@
 .main__but__fill {
     color: white;
     background-color: #DF4444;
-    margin-right: 50px;
 }
 
 /*MAIN_SECTION_1*/
 .main__start {
-    height: 700px;
-    padding-top: 300px;
+    padding-top: 20%;
+    padding-bottom: 50px;
 }
 
 .start__heading {
@@ -120,12 +130,15 @@
     margin-bottom: 64px;
     line-height: 60px;
 }
+.main__refs__block{
+    width: 45%;
+}
 
 /*MAIN_SECTION_1*/
 
 /*MAIN_SECTION_2*/
 .main__service {
-    height: 1100px;
+    
 }
 
 .service__red__stripe {
@@ -155,17 +168,22 @@
     color: white;
     background-color: #df4444;
 }
-
-.service__acricle__heading {
+.service__article__info{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+.service__article__heading {
     display: inline-block;
     border-bottom: 2px solid #DF4444;
     font-size: 40px;
     font-weight: 500;
 }
 
-.service__acricle__text {
+.service__article__text {
     padding: 20px 0;
-    width: 500px;
+    min-width: 280px;
+    max-width: 600px;
     font-size: 18px;
     line-height: 25px;
 }
@@ -173,14 +191,13 @@
 .service__article__img {
     width: 175px;
     float: right;
-    margin-top: -166px;
 }
 
 /*MAIN_SECTION_2*/
 /*MAIN_SECTION_3*/
 
 .main__portfolio {
-    height: 1000px;
+    
 }
 
 .portfolio__heading {
@@ -200,7 +217,8 @@
 
 .portfolio__article {
     margin: 20px 5px;
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     height: 300px;
     background-color: #Df4444;
     border-radius: 20px;
@@ -209,7 +227,7 @@
 /*MAIN_SECTION_3*/
 /*MAIN_SECTION_4*/
 .main__info{
-    height: 750px;
+    
 }
 .info__heading {
     margin-bottom: 50px;
@@ -265,8 +283,7 @@
 /*FOOTER*/
 .footer{
     padding: 50px 0;
-    background-color: #df4444;
-    height: 100px;    
+    background-color: #df4444;   
 }
 .footer__nav{
     width: 300px;

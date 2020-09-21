@@ -1,0 +1,39 @@
+@media screen and (max-width : 803px){
+    .header__adapt__but{
+        display: block;
+    }
+    .header__item{
+        display: none;
+    }
+
+    .portfolio__grid{
+        display: grid;
+        grid-template: 1fr / 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .flex__horizontal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main__refs__block{
+        margin: 0 auto;
+    }
+
+    .start__heading{
+        font-size: 30px;
+    }
+    .portfolio__heading{
+        font-size: 30px;
+    }
+    .service__article__heading{
+        font-size: 30px;
+    }
+    .service__article__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+}

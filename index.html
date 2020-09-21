@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="src/assets/css/fonts.css">
     <link rel="stylesheet" href="src/assets/css/main.css">
     <link rel="stylesheet" href="src/assets/css/reset.css">
+    <link rel="stylesheet" href="src/assets/css/mobile.css">
+
     <script src="src/assets/js/main.js" ></script>
     <title>Портфолио</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container flex__horizontal">
+        <div class="container flex__static__horizontal">
             <img src="" alt="Логотип">
             <nav>
                 <ul class="flex__horizontal">
@@ -39,13 +41,13 @@
                     </li>
                 </ul>
             </nav>
-
-            <a class="header__item header__contact__email" href="#">
+            <a class="header__item header__contact__email" href="mailto:semacool1@gmail.com">
                 <span class="header__scale__hover animated">ЭЛЕКТРОННАЯ ПОЧТА</span>
             </a>
-            <a class="header__item header__contact__phone" href="#">
+            <a class="header__item header__contact__phone" href="tel:+7999-999-99-99">
                 <span class="header__scale__hover animated">ПОЗВОНИТЬ</span>
             </a>
+            <a href="#" class="header__adapt__but">Меню</a>
         </div>
     </header>
     <main>
@@ -54,8 +56,10 @@
                 <h2 class="start__heading not__visible">СДЕЛАЕМ LANDING PAGE
                     С БОЛЬШОЙ КОНВЕРСИЕЙ
                     ЗА НАИМЕНЬШИЙ СРОК</h2>
-                <a class="main__but main__but__fill animated not__visible" href="">ЗАКАЗАТЬ</a>
-                <a class="main__but  main__but__hover animated not__visible" href="">ПОРТФОЛИО</a>
+                <div class="main__refs__block flex__horizontal">
+                    <a class="main__but main__but__fill animated not__visible" href="#">ЗАКАЗАТЬ</a>
+                    <a class="main__but  main__but__hover animated not__visible" href="#">ПОРТФОЛИО</a>
+                </div>
             </div>
         </section>
         <section class="main_service" id="service">
@@ -65,36 +69,39 @@
                 </div>
             </div>
             <article class="service__article__fill">
-                <div class="container not__visible">
-
-                    <h3 class="service__acricle__heading">LANDING PAGE</h3>
-                    <p class="service__acricle__text">
-                        Создание LANDING PAGE , сайта для продвижения малого и среднего бизнеса.
-                        Представляет из себя страницу, которая разделена на секции
-                    </p>
+                <div class="flex__horizontal container not__visible">
+                    <div class="service__article__info">
+                        <h3 class="service__article__heading">LANDING PAGE</h3>
+                        <p class="service__article__text">
+                            Создание LANDING PAGE , сайта для продвижения малого и среднего бизнеса.
+                            Представляет из себя страницу, которая разделена на секции
+                        </p>
+                    </div>
                     <img class="service__article__img" src="src/assets/images/landing-page.svg" alt="LANDING PAGE">
                 </div>
             </article>
             <article class="service__article">
-                <div class="container not__visible">
-
-                    <h3 class="service__acricle__heading">КОРПОРАТИВНЫЙ САЙТ</h3>
-                    <p class="service__acricle__text">
-                        Это может быть простой сайт-визиткой или полноценный интернет магазин.
-                        Стоимость услуги зависит от сложности выполнения.
-                    </p>
+                <div class="flex__horizontal container not__visible">
+                    <div class="service__article__info">
+                        <h3 class="service__article__heading">КОРП. САЙТ</h3>
+                        <p class="service__article__text">
+                            Это может быть простой сайт-визиткой или полноценный интернет магазин.
+                            Стоимость услуги зависит от сложности выполнения.
+                        </p>
+                    </div>
                     <img class="service__article__img" src="src/assets/images/site.svg" alt="LANDING PAGE">
                 </div>
 
             </article>
             <article class="service__article__fill">
-                <div class="container not__visible">
-
-                    <h3 class="service__acricle__heading">LANDING PAGE</h3>
-                    <p class="service__acricle__text">
+                <div class="flex__horizontal  container not__visible">
+                    <div class="service__article__info">
+                    <h3 class="service__article__heading">LANDING PAGE</h3>
+                    <p class="service__article__text">
                         Создание LANDING PAGE , сайта для продвижения малого и среднего бизнеса.
                         Представляет из себя страницу, которая разделена на секции
                     </p>
+                    </div>
                     <img class="service__article__img" src="src/assets/images/shop.svg" alt="LANDING PAGE">
                 </div>
             </article>
